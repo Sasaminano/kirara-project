@@ -1,5 +1,7 @@
 # Kirara Project
+
 This is a project for ECE 532 G14 at the University of Toronto for 2026W.
+
 Our design tree is as follows:
 ```
 .
