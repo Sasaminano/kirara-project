@@ -59,4 +59,8 @@ Most notably our src files are in the `src/` folder with the `src/mem` containin
 
 The `kirara_final_demo_refactor.sdk` contains the code for the MicroBlaze with `kirara_final_demo_refactor.sdk/imu/src` containing the '.c' source code for the event and animation code.
 
+The `pmod_nav_hw_controller_1.0` contains our custom packaged IP for the PmodNAV.
+
+The `rgb2vga_v1_0` contains the third-party IP code from the Vivado library for rgb2gva.
+
 
