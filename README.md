@@ -63,4 +63,4 @@ The `pmod_nav_hw_controller_1.0` contains our custom packaged IP for the PmodNAV
 
 The `rgb2vga_v1_0` contains the third-party IP code from the Vivado library for rgb2gva.
 
-
+Link to Video: https://drive.google.com/file/d/1X8w4vfApDGSPWFrsuDxEXEj6QSSLt1qx/view?usp=sharing 
