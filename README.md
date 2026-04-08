@@ -4,47 +4,26 @@ Our design tree is as follows:
 ```
 .
 └── kirara_final_demo_refactor
+    ├── docs
     ├── kirara_final_demo_refactor.cache
-    │   └── *
     ├── kirara_final_demo_refactor.hw
-    │   └── *
     ├── kirara_final_demo_refactor.ip_user_files
-    │   └── *
+    ├── kirara_final_demo_refactor.runs
     ├── kirara_final_demo_refactor.sdk
-    │   ├── imu
-    │   │   ├── Debug
-    │   │   │   └── *
-    │   │   ├── Release
-    │   │   │   └── *
-    │   │   └── src
-    │   │       ├── lscript.ld
-    │   │       ├── main.c
-    │   │       ├── platform.c
-    │   │       ├── platform_config.h
-    │   │       └── platform.h
-    │   ├── imu_bsp
-    │   │   └── *
-    │   ├── RemoteSystemsTempFiles
-    │   ├── SDK.log
-    │   ├── system_wrapper.hdf
-    │   ├── system_wrapper_hw_platform_0
-    │   │   ├── download.bit
-    │   │   ├── drivers
-    │   │   │   └── pmod_nav_hw_controller_v1_0
-    │   │   │       └── *
-    │   │   ├── system.hdf
-    │   │   ├── system_wrapper.bit
-    │   │   └── system_wrapper.mmi
-    │   └── webtalk
-    │       └── *
+    │   └── imu
+    │       └── src
+    │           ├── lscript.ld
+    │           ├── main.c
+    │           ├── platform.c
+    │           ├── platform_config.h
+    │           └── platform.h
+    ├── kirara_final_demo_refactor.sim
     ├── kirara_final_demo_refactor.srcs
-    │   ├── constrs_1
-    │   │   └── new
-    │   │       └── nexys4_ddr_pins.xdc
-    │   └── sources_1
-    │       └── bd
-    │           └── *
+    ├── kirara_final_demo_refactor.tmp
     ├── kirara_final_demo_refactor.xpr
+    ├── pmod_nav_hw_controller_1.0
+    ├── README.md
+    ├── rgb2vga_v1_0
     └── src
         ├── mem
         │   ├── kirara_background_640x360_idx6_bayer4x4.mem
@@ -73,6 +52,7 @@ Our design tree is as follows:
             ├── red_q_detect.v
             ├── seven_seg_driver.v
             └── video_kirara_stub_800x600.v
+
 ```
 
 Most notably our src files are in the `src/` folder with the `src/mem` containing the mem files corresponding to the audio, sprites, and background assets and `src/verilog` containing the `.vhd` and `.v` source files.
