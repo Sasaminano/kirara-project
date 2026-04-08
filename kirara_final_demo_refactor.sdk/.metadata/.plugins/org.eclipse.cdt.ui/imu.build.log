@@ -1,0 +1,21 @@
+21:26:48 **** Auto Build of configuration Release for project imu ****
+make all 
+Building file: ../src/main.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O2 -c -fmessage-length=0 -MT"src/main.o" -I../../imu_bsp/microblaze_0/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/main.c
+ 
+Building target: imu.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L../../imu_bsp/microblaze_0/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "imu.elf" ./src/main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: imu.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size imu.elf  |tee "imu.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   5160	    268	   1324	   6752	   1a60	imu.elf
+Finished building: imu.elf.size
+ 
+
+21:26:48 Build Finished (took 266ms)
+
